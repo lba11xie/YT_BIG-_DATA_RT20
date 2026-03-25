@@ -1,8 +1,8 @@
-# 📊 YouTube Big Data Analytics Project
+# YouTube Big Data Analytics Project
 
 A complete **end-to-end Big Data pipeline** that collects YouTube trending data, processes it with Apache Spark, and visualizes insights in a premium Streamlit dashboard.
 
-## 🗂️ Project Structure
+##  Project Structure
 ```
 c:\JELLYFISH\YT_BD\YT_BD\
 ├── config.py               ← API Key, DB credentials, paths
@@ -37,7 +37,7 @@ c:\JELLYFISH\YT_BD\YT_BD\
     └── processed\          ← Spark output files
 ```
 
-## ⚙️ Tech Stack
+## Tech Stack
 | Layer | Tool |
 |-------|------|
 | API | YouTube Data API v3 |
@@ -47,7 +47,7 @@ c:\JELLYFISH\YT_BD\YT_BD\
 | NLP | TextBlob Sentiment |
 | Visualization | Streamlit + Plotly + WordCloud |
 
-## 🚀 Quick Start (One Command!)
+##  Quick Start (One Command!)
 ```bash
 python c:\JELLYFISH\YT_BD\YT_BD\run_pipeline.py
 ```
@@ -58,12 +58,12 @@ This runs all 5 stages automatically:
 4. Runs PySpark processing + sentiment analysis
 5. Launches Streamlit dashboard at http://localhost:8501
 
-## 📦 Install Dependencies
+##  Install Dependencies
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-## 🔑 MySQL Configuration
+##  MySQL Configuration
 Default: `host=localhost, user=root, password=root, db=yt_bigdata`
 
 To change, edit `config.py`:
@@ -72,16 +72,16 @@ DB_USER     = "root"
 DB_PASSWORD = "your_password"
 ```
 
-## 📊 Dashboard Pages
+##  Dashboard Pages
 | Page | Description |
 |------|-------------|
-| 🏠 Home | Stats overview + pipeline diagram |
-| 📊 Top Videos | Bar charts, scatter, video cards |
-| 📂 Categories | Pie, bar, bubble charts by category |
-| 💬 Sentiment | Donut chart, comment sentiment viewer |
-| ☁️ Word Cloud | Interactive word cloud + frequency bars |
+| Home | Stats overview + pipeline diagram |
+| Top Videos | Bar charts, scatter, video cards |
+|  Categories | Pie, bar, bubble charts by category |
+|  Sentiment | Donut chart, comment sentiment viewer |
+|  Word Cloud | Interactive word cloud + frequency bars |
 
-## 🔧 Run Individual Steps
+##  Run Individual Steps
 ```bash
 # Step 1: Setup DB only
 python c:\JELLYFISH\YT_BD\YT_BD\db\setup_db.py

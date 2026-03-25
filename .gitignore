@@ -1,0 +1,56 @@
+# ============================================================
+#  Git Ignore – YT_BD Project
+# ============================================================
+
+# --- Secrets ---
+.env
+config.py          # Contains live API keys — use config.py.example instead
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# --- Virtual Environment ---
+.venv/
+venv/
+env/
+
+# --- Large / Binary / Archive files ---
+*.rar
+*.zip
+*.tar.gz
+*.jar
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Database files (generated) ---
+db/*.sql
+db/*.dump
+data/*.db
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.parquet
+
+# Keep the data directory structure in git
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Spark ---
+spark/logs/
+spark/tmp/
+derby.log
+metastore_db/
+
+# --- OS ---
+Thumbs.db
+.DS_Store
